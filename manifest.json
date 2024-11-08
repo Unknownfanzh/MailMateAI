@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "MailMate AI",
+  "version": "1.0",
+  "description": "An AI assistant for Gmail email management.",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "permissions": ["identity", "identity.email", "scripting", "activeTab"],
+  "host_permissions": ["https://gmail.googleapis.com/"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "oauth2": {
+    "client_id": "[YOUR_PLACEHOLDER_CLIENT_ID].apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/gmail.readonly",
+      "https://www.googleapis.com/auth/gmail.compose"
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MailMate AI - Compose a New Email</title>
+    <link rel="stylesheet" href="sendEmailStyle.css" />
+  </head>
+  <body>
+    <div id="container">
+    <div id="header">
+      <div id="headerLogoContainer">
+        <img src="icon128.png" alt="MailMate AI Logo" id="logo">
+        <h1>MailMate AI</h1>
+      </div>
+      <h2>Compose a New Email</h2>
+    </div>
+      <button id="goBackButton">Go Back</button>
+
+      <div id="sendEmailContainer">
+        <label for="recipientInput">To:</label>
+        <input
+          type="text"
+          id="recipientInput"
+          placeholder="Recipient email address"
+        />
+
+        <label for="subjectInput">Subject:</label>
+        <input type="text" id="subjectInput" placeholder="Email subject" />
+
+        <label for="promptInput">Prompt (optional):</label>
+        <input
+          type="text"
+          id="promptInput"
+          placeholder="E.g., Schedule a meeting about..."
+        />
+        <label for="toneSelect">Select Tone:</label>
+        <select id="toneSelect">
+          <option value="friendly">Friendly/Casual</option>
+          <option value="formal">Formal</option>
+          <option value="Neutral">Neutral</option>
+        </select>
+
+        <label for="emailBodyTextarea">Body:</label>
+        <textarea
+          id="emailBodyTextarea"
+          placeholder="Email content..."
+        ></textarea>
+
+        <button id="generateDraftButton">Generate Draft</button>
+
+        <p id="loadingDraftMessage">Generating draft email, please wait...</p>
+
+        <button id="sendEmailButton">Send Email</button>
+      </div>
+    </div>
+  </div>
+    <script src="send_email.js"></script>
+  </body>
+</html>

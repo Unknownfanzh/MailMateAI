@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MailMate AI - Email Summarizer & Assistant</title>
+    <link rel="stylesheet" href="popupStyle.css" />
+
+    <style></style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="header">
+        <div id="headerLogoContainer">
+          <img src="icon128.png" alt="MailMate AI Logo" id="logo">
+          <h1>MailMate AI</h1>
+        </div>
+        <h2>Email Summarizer & Assistant</h2>
+      </div>
+      <div id="loginoutContainer">
+        <button id="loginButton">Log In Your Gmail First</button>
+      </div>
+      <div id="sendEmailBtn-container">
+        <button id="sendEmailButton">Send an Email</button>
+      </div>
+      <div id="searchContainer">
+        <input type="text" id="searchInput" placeholder="Search emails..." />
+        <button id="searchButton">Search</button>
+      </div>
+      <div id="emailPartContainer">
+        <div id="emailListContainer">
+          <label><strong>Select an email:</strong></label>
+          <div id="emailList"></div>
+          <button id="loadMoreButton" style="display: none">
+            Load More Emails
+            <p id="loadingEmails">Loading emails, please wait...</p>
+          </button>
+        </div>
+
+        <div id="emailDetailsContainer">
+          <p id="emailSender">No email selected</p>
+          <p id="emailSubject"></p>
+          <p><strong>Content:</strong></p>
+          <p id="emailContent">Please select an email to view content.</p>
+        </div>
+      </div>
+
+      <div id="summarizationContainer">
+        <button id="summarizeButton" disabled>Summarize Selected Email</button>
+        <p id="loadingSummary" style="display: none">Generating summary, please wait...</p>
+        <div id="summaryContainer">
+          <h3>Summary:</h3>
+          <p id="summaryText">No summary available yet.</p>
+        </div>
+      </div>
+      <div id="draftEmailContainer">
+        <div id="toneChooseContainer">
+          <label for="toneSelectReply">Select Tone for Reply:</label>
+          <select id="toneSelectReply">
+            <option value="friendly">Friendly/Casual</option>
+            <option value="neutral">Neutral</option>
+            <option value="formal">Formal</option>
+          </select>
+          <button id="draftReplyButton">Draft a Reply</button>
+          <p id="loadingDraft" style="display: none">Generating draft reply, please wait...</p>
+        </div>
+
+        <div id="draftContainer">
+          <textarea
+            id="draftTextarea"
+            placeholder="Your draft will appear here..."></textarea>
+          <button id="sendReplyButton">Send Reply</button>
+        </div>
+      </div>
+
+      <div id="loginoutContainer">
+        <button id="logoutButton">Log Out</button>
+      </div>
+      <div id="errorMessage"></div>
+    </div>
+    <script src="config.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>
