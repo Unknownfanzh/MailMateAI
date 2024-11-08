@@ -21,7 +21,7 @@ body {
 }
 
 body, p, h1, h2, #emailList, #emailContent {
-  font-size: 13px; /* Example fixed font size */
+  font-size: 12px;
   line-height: 1.5;
   overflow-wrap: break-word;
   word-wrap: break-word;
@@ -250,7 +250,7 @@ body, p, h1, h2, #emailList, #emailContent {
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   background-color: #ffffff;
-  max-height: 150px;
+  max-height: 200px;
   overflow-y: auto;
 }
 
@@ -302,6 +302,7 @@ body, p, h1, h2, #emailList, #emailContent {
 }
 
 #draftTextarea {
+  height: 200px;
   width: calc(100% - 10px);
   min-height: 100px;
   padding: 10px;
@@ -309,7 +310,7 @@ body, p, h1, h2, #emailList, #emailContent {
   border-radius: 6px;
   resize: vertical;
   font-family: "Roboto", Arial, sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   background-color: #f9f9f9;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
 }
