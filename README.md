@@ -62,7 +62,8 @@ To enable Gmail API access, you'll need to set up OAuth credentials for the Chro
    - Enter your app’s details (name, support email, etc.).
    - Add scopes like `https://www.googleapis.com/auth/gmail.readonly` and `https://www.googleapis.com/auth/gmail.compose` for reading and sending emails.
    - Save and proceed.
-8. Download the OAuth credentials JSON file and configure it if necessary in your extension.
+8. Open the manifest.json file in the MailMate AI extension directory and replace "YOUR_CLIENT_ID_HERE" with the Client ID generated for your extension.
+
 
 ## Usage
 
