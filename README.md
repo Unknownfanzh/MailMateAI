@@ -88,7 +88,7 @@ Draft a New Email:
 
 ## Video Demo
 
-Check out the demo video showcasing MailMate AI's features and functionalities: [YouTube Video Link](https://www.youtube.com/)
+Check out the demo video showcasing MailMate AI's features and functionalities: [YouTube Video Link](https://youtu.be/3ejjjcaBERI)
 
 
 ## License
